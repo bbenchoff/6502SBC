@@ -1,0 +1,53 @@
+
+
+Part  Value                       Device                      Package                      Description
+-------------------------------------------------------------------------------------------------------------------------------------------------
+                                           
+ACIA  6551                        6551                        DIP28                        ACIA. Capable of RS-232
+CPU   6502                        6502                        DIP40                        6502 processor
+VIA1  6522                        6522                        DIP40                        I/O device: two 8-bits ports, handshake lines, timers.
+VIA1  6522                        6522                        DIP40                        I/O device: two 8-bits ports, handshake lines, timers.
+RAM   62256                       62256P                      DIL28-6                      MEMORY
+ROM   27C128P                     27C128P                     DIL28-6                      CMOS EPROM
+IC1   MAX3232CPE                  MAX3232CPE                  DIL16                        True RS-232 Transceivers 3.0V to 5.5V, Low-Power
+IC2   74HCT04N                    74HCT04N                    DIL14                        Hex INVERTER
+IC3   74HCT00N                    74HCT00N                    DIL14                        Quad 2-input NAND gate
+IC4   7805                        V_REG_78XX-TO-220           TO-220-ALT                   Voltage Regulator
+IC5   NE555P                      NE555P                      DIL-08                       General purpose bipolar Timer
+Q1    1MHz                        CRYSTALHC49S                HC49/S                       CRYSTAL
+Q2    1.8432MHz                   CRYSTALHC49S                HC49/S                       CRYSTAL
+
+C1    0.1uF                       CAPKIT                      CAP-PTH-SMALL-KIT            Capacitor
+C2    0.47uF                      CAPKIT                      CAP-PTH-SMALL-KIT            Capacitor
+C3    47pf                        CAPEZ                       CAP-PTH-SMALLEZ              Capacitor
+C4    47pf                        CAPEZ                       CAP-PTH-SMALLEZ              Capacitor
+C5    .01uf                       CAPEZ                       CAP-PTH-SMALLEZ              Capacitor
+C6    .01uf                       CAPEZ                       CAP-PTH-SMALLEZ              Capacitor
+C7    10uf                        CAPEZ                       CAP-PTH-SMALLEZ              Capacitor
+C8    47pf                        CAPEZ                       CAP-PTH-SMALLEZ              Capacitor
+C9    47pf                        CAPEZ                       CAP-PTH-SMALLEZ              Capacitor
+
+D1    1N4148                      DIODE1N4148                 DIODE-1N4148                 Diode
+LED1  GREEN                       LED3MM                      LED3MM                       LED
+
+R1    180k                        RESISTOREZ                  AXIAL-0.3EZ                  Resistor
+R2    3.3k                        RESISTORAXIAL-0.3           AXIAL-0.3                    Resistor
+R3    10M                         RESISTORAXIAL-0.3           AXIAL-0.3                    Resistor
+R4    47k                         RESISTORAXIAL-0.3           AXIAL-0.3                    Resistor
+R5    150                         RESISTOREZ                  AXIAL-0.3EZ                  Resistor
+R6    180k                        RESISTOREZ                  AXIAL-0.3EZ                  Resistor
+R7    3.3k                        RESISTOREZ                  AXIAL-0.3EZ                  Resistor
+R8    3.3k                        RESISTOREZ                  AXIAL-0.3EZ                  Resistor
+
+S1    SWITCH-MOMENTARY-2PTH       SWITCH-MOMENTARY-2PTH       TACTILE-PTH                  Various NO switches- pushbuttons, reed, etc 
+S2    SMD SPDT switch             SWITCH-SPDTSMD2             SWITCH-SPDT-SMD              SPDT Switch
+J1    POWER_JACKPTH               POWER_JACKPTH               POWER_JACK_PTH               Power Jack
+J2    4 pin Molex                 COMPUTER-PERIPHERAL-POWERRA COMPUTER-PERIPHERAL-POWER-RA 
+X1    DE9 Female right angle      DB9FEMALE                   DB9                          DB9 Connector
+J3    22-27-2021-02               22-27-2021-02               6410-02                      CONNECTOR
+
+VIA0A                             M08LONGPADS                 1X08_LONGPADS                Header 8                                                                                                 
+VIA0B                             M08LONGPADS                 1X08_LONGPADS                Header 8                                                                                                                                                   
+VIA1A                             M08LONGPADS                 1X08_LONGPADS                Header 8  
+VIA1B                             M08LONGPADS                 1X08_LONGPADS                Header 8
+                                               
