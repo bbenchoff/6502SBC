@@ -8008,7 +8008,6 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="10M"/>
 <part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="AXIAL-0.3" value="47k"/>
 <part name="D1" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="1N4148"/>
-<part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-SPDT" device="SMD2"/>
 <part name="LED1" library="led" deviceset="LED" device="3MM"/>
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="EZ" value="150"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="CAP" device="EZ" value="47pf"/>
@@ -8027,6 +8026,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-SPDT" device="PTH_LOCK"/>
 </parts>
 <sheets>
 <sheet>
@@ -8077,7 +8077,6 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <instance part="R3" gate="G$1" x="308.61" y="59.69"/>
 <instance part="R4" gate="G$1" x="323.85" y="57.15"/>
 <instance part="D1" gate="G$1" x="331.47" y="54.61"/>
-<instance part="S2" gate="1" x="78.74" y="158.75" rot="R270"/>
 <instance part="LED1" gate="G$1" x="81.28" y="146.05"/>
 <instance part="R5" gate="G$1" x="73.66" y="143.51" rot="R90"/>
 <instance part="C8" gate="G$1" x="330.2" y="166.37"/>
@@ -8097,6 +8096,7 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <instance part="SUPPLY4" gate="1" x="144.78" y="92.71"/>
 <instance part="GND7" gate="1" x="144.78" y="67.31"/>
 <instance part="GND8" gate="1" x="359.41" y="58.42"/>
+<instance part="S2" gate="1" x="78.74" y="158.75" rot="R270"/>
 </instances>
 <busses>
 <bus name="VIA0A[0..7]">
@@ -8138,7 +8138,6 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <wire x1="160.02" y1="50.8" x2="185.42" y2="50.8" width="0.762" layer="92"/>
 <wire x1="185.42" y1="50.8" x2="234.95" y2="50.8" width="0.762" layer="92"/>
 <wire x1="234.95" y1="50.8" x2="283.21" y2="50.8" width="0.762" layer="92"/>
-<wire x1="283.21" y1="50.8" x2="288.29" y2="50.8" width="0.762" layer="92"/>
 <wire x1="107.95" y1="83.82" x2="115.57" y2="83.82" width="0.762" layer="92"/>
 <wire x1="115.57" y1="83.82" x2="115.57" y2="74.295" width="0.762" layer="92"/>
 <wire x1="185.42" y1="50.8" x2="185.42" y2="86.36" width="0.762" layer="92"/>
@@ -9477,16 +9476,24 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <junction x="328.93" y="57.15"/>
 </segment>
 <segment>
-<pinref part="S2" gate="1" pin="P"/>
 <wire x1="78.74" y1="168.91" x2="78.74" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <junction x="78.74" y="167.386"/>
 <wire x1="78.74" y1="167.64" x2="78.74" y2="167.386" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="167.386" x2="78.74" y2="161.29" width="0.1524" layer="91"/>
+<pinref part="S2" gate="1" pin="P"/>
 <pinref part="J2" gate="G$1" pin="5V"/>
 <wire x1="105.41" y1="157.48" x2="105.41" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="105.41" y1="167.64" x2="78.74" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="167.64" x2="83.82" y2="167.64" width="0.1524" layer="91"/>
 <junction x="78.74" y="167.64"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
+<wire x1="83.82" y1="167.64" x2="105.41" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="148.59" x2="81.28" y2="148.336" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="148.59" x2="83.82" y2="151.13" width="0.1524" layer="91"/>
+<junction x="81.28" y="148.59"/>
+<wire x1="83.82" y1="151.13" x2="83.82" y2="167.64" width="0.1524" layer="91"/>
+<junction x="83.82" y="167.64"/>
+<junction x="78.74" y="161.29"/>
 </segment>
 <segment>
 <pinref part="CPU" gate="G$1" pin="RDY"/>
@@ -9874,19 +9881,6 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <junction x="195.58" y="100.33"/>
 </segment>
 </net>
-<net name="N$28" class="0">
-<segment>
-<pinref part="S2" gate="1" pin="S"/>
-<wire x1="68.58" y1="153.67" x2="69.85" y2="153.67" width="0.1524" layer="91"/>
-<junction x="76.2" y="153.67"/>
-<pinref part="IC4" gate="G$1" pin="OUT"/>
-<junction x="69.85" y="153.67"/>
-<wire x1="69.85" y1="153.67" x2="76.2" y2="153.67" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="76.2" y1="153.67" x2="81.28" y2="148.59" width="0.1524" layer="91"/>
-<junction x="81.28" y="148.59"/>
-</segment>
-</net>
 <net name="N$30" class="0">
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
@@ -10077,6 +10071,15 @@ wire to board 2.54 mm (.1 inch) pitch header</description>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="73.66" y1="138.43" x2="81.28" y2="138.43" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="138.43" x2="81.28" y2="140.97" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="IC4" gate="G$1" pin="OUT"/>
+<pinref part="S2" gate="1" pin="S"/>
+<wire x1="69.85" y1="153.67" x2="76.2" y2="153.67" width="0.1524" layer="91"/>
+<junction x="69.85" y="153.67"/>
+<junction x="76.2" y="153.67"/>
 </segment>
 </net>
 </nets>

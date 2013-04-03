@@ -40,7 +40,7 @@ R7    3.3k                        RESISTOREZ                  AXIAL-0.3EZ       
 R8    3.3k                        RESISTOREZ                  AXIAL-0.3EZ                  Resistor
 
 S1    SWITCH-MOMENTARY-2PTH       SWITCH-MOMENTARY-2PTH       TACTILE-PTH                  Various NO switches- pushbuttons, reed, etc 
-S2    SMD SPDT switch             SWITCH-SPDTSMD2             SWITCH-SPDT-SMD              SPDT Switch
+S2    SWITCH-SPDT                 SWITCH-SPDT                                              SPDT Switch
 J1    POWER_JACKPTH               POWER_JACKPTH               POWER_JACK_PTH               Power Jack
 J2    4 pin Molex                 COMPUTER-PERIPHERAL-POWERRA COMPUTER-PERIPHERAL-POWER-RA 
 X1    DE9 Female right angle      DB9FEMALE                   DB9                          DB9 Connector
@@ -50,4 +50,6 @@ VIA0A                             M08LONGPADS                 1X08_LONGPADS     
 VIA0B                             M08LONGPADS                 1X08_LONGPADS                Header 8                                                                                                                                                   
 VIA1A                             M08LONGPADS                 1X08_LONGPADS                Header 8  
 VIA1B                             M08LONGPADS                 1X08_LONGPADS                Header 8
-                                               
+
+BOX   Hammond 1402DV					      Hammond 1402-series	   Enclosure
+T1    Hammond 166K12              Power Transformers 12.6ct VAC / 1.2 Amp                  Transformer               
